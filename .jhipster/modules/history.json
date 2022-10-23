@@ -1,0 +1,12 @@
+{
+  "actions" : [ {
+    "module" : "init",
+    "date" : "2022-10-23T22:50:28.941767Z",
+    "properties" : {
+      "projectName" : "Dummy app",
+      "baseName" : "dummyApp",
+      "endOfLine" : "lf",
+      "indentSize" : 2
+    }
+  } ]
+}
