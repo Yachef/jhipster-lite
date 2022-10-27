@@ -41,5 +41,16 @@
       "packageName" : "com.mycompany.myapp",
       "serverPort" : 8080
     }
+  }, {
+    "module" : "spring-boot-webflux-netty",
+    "date" : "2022-10-27T19:16:42.303970Z",
+    "properties" : {
+      "endOfLine" : "lf",
+      "packageName" : "com.mycompany.myapp",
+      "projectName" : "Dummy app",
+      "indentSize" : 2,
+      "serverPort" : 8080,
+      "baseName" : "dummyApp"
+    }
   } ]
 }
