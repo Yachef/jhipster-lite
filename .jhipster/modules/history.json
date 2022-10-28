@@ -52,5 +52,16 @@
       "packageName" : "com.mycompany.myapp",
       "serverPort" : 8080
     }
+  }, {
+    "module" : "application-service-hexagonal-architecture-documentation",
+    "date" : "2022-10-28T22:53:05.293247Z",
+    "properties" : {
+      "projectName" : "Dummy app",
+      "indentSize" : 2,
+      "baseName" : "dummyApp",
+      "endOfLine" : "lf",
+      "packageName" : "com.mycompany.myapp",
+      "serverPort" : 8080
+    }
   } ]
 }
