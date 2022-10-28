@@ -8,5 +8,16 @@
       "endOfLine" : "lf",
       "indentSize" : 2
     }
+  }, {
+    "module" : "maven-java",
+    "date" : "2022-10-28T22:38:35.053919Z",
+    "properties" : {
+      "projectName" : "Dummy app",
+      "indentSize" : 2,
+      "baseName" : "dummyApp",
+      "endOfLine" : "lf",
+      "packageName" : "com.mycompany.myapp",
+      "serverPort" : 8080
+    }
   } ]
 }
