@@ -41,5 +41,16 @@
       "packageName" : "com.mycompany.myapp",
       "serverPort" : 8080
     }
+  }, {
+    "module" : "spring-boot-tomcat",
+    "date" : "2022-10-28T22:52:50.950600Z",
+    "properties" : {
+      "projectName" : "Dummy app",
+      "indentSize" : 2,
+      "baseName" : "dummyApp",
+      "endOfLine" : "lf",
+      "packageName" : "com.mycompany.myapp",
+      "serverPort" : 8080
+    }
   } ]
 }
