@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/exception-translator-test")
-public class ExceptionTranslatorTestController {
+public class GlobalExceptionHandlerTestController {
 
   @PostMapping("/method-argument")
   public void methodArgument(@Valid @RequestBody TestDTO testDTO) {}
@@ -19,19 +19,9 @@ public class ExceptionTranslatorTestController {
   @GetMapping("/missing-servlet-request-parameter")
   public void missingServletRequestParameterException(@RequestParam String param) {}
 
-  @GetMapping("/response-status")
-  public void exceptionWithResponseStatus() {
-    throw new TestResponseStatusException();
-  }
-
   @GetMapping("/internal-server-error")
   public void internalServerError() {
     throw new RuntimeException();
-  }
-
-  @GetMapping("/bad-request-error")
-  public void badRequestError() {
-    throw new BadRequestAlertException("Bad request error", "beer", "http.400");
   }
 
   @GetMapping("/null-pointer-exception")
@@ -57,7 +47,4 @@ public class ExceptionTranslatorTestController {
       this.test = test;
     }
   }
-
-  @ResponseStatus(value = HttpStatus.BAD_REQUEST, reason = "test response status")
-  public static class TestResponseStatusException extends RuntimeException {}
 }
