@@ -1,6 +1,7 @@
 package com.mycompany.myapp.technical.infrastructure.primary.exception;
 
 import org.springframework.http.converter.HttpMessageConversionException;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -9,7 +10,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RequestPart;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 
 @RestController
@@ -17,7 +17,7 @@ import javax.validation.constraints.NotNull;
 public class GlobalExceptionHandlerTestController {
 
   @PostMapping("/method-argument")
-  public void methodArgument(@Valid @RequestBody TestDTO testDTO) {}
+  public void methodArgument(@Validated @RequestBody TestDTO testDTO) {}
 
   @GetMapping("/missing-servlet-request-part")
   public void missingServletRequestPartException(@RequestPart String part) {}
